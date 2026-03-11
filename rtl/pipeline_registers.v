@@ -17,10 +17,10 @@ module pipeline_registers(
 
 always @(posedge clk or posedge reset) begin
     if(reset) begin
-        if_id_out <= 8'b00000000;
-        id_ex_out <= 8'b00000000;
-        ex_mem_out <= 8'b00000000;
-        mem_wb_out <= 8'b00000000;
+        if_id_out <= 8'b0;
+        id_ex_out <= 8'b0;
+        ex_mem_out <= 8'b0;
+        mem_wb_out <= 8'b0;
     end
     else begin
         if_id_out <= if_id_in;
